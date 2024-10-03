@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobrinha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>GAME DA SNAKE</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="buttons">
+            <button id="recordButton">Record do Jogador</button>
+        </div>
+        <div id="scoreDisplay">Pontuação: <span id="scoreValue">0</span></div>
+        <div id="recordDisplay">Record: <span id="recordValue">0</span> por <span id="playerName">Ninguém</span></div>
+    </div>
+    <audio id="eatSound" src="sounds/eat-sound.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
